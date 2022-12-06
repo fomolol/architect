@@ -10,7 +10,7 @@
     "release": "f(){ release-it $1 && github-release-from-changelog ;};f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "directories": {
+  "architect": {
     "src": "."
   },
   "publishConfig": {

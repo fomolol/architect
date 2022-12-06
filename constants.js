@@ -37,7 +37,7 @@ module.exports = {
    * Fetches the directories content from package.json
    * @param {string} dirPathName is the name of the directories key in package.json
    */
-  dirs: function (dirPathName = 'directories') {
+  dirs: function (dirPathName = 'architect') {
     const pkg = require(path.resolve(pkgpath.parent(), 'package.json'))
     return pkg[dirPathName]
   },
