@@ -1,0 +1,62 @@
+{
+  "name": "scaffolding-nextjs",
+  "version": "2.1.14",
+  "description": "Templates that aid in the development of NextJS applications.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./architect.js -o ./lib/index.js",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "release": "f(){ release-it $1 && github-release-from-changelog ;};f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "src": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robksawyer/scaffolding-nextjs.git"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
+  },
+  "keywords": [
+    "scaffolds",
+    "templates",
+    "nextjs"
+  ],
+  "author": "Rob Sawyer (robksawyer@gmail.com)",
+  "license": "MIT",
+  "bin": {
+    "architect": "architect.js"
+  },
+  "bugs": {
+    "url": "https://github.com/robksawyer/scaffolding-nextjs/issues"
+  },
+  "homepage": "https://github.com/robksawyer/scaffolding-nextjs#readme",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "chalk": "^3.0.0",
+    "child_process": "^1.0.2",
+    "colors": "^1.4.0",
+    "commander": "^4.0.1",
+    "dopl": "^0.2.0",
+    "entities": "^2.0.0",
+    "minimist": "^1.2.0",
+    "packpath": "^0.1.0",
+    "path": "^0.12.7",
+    "pkgpath": "^0.1.1"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.2.0",
+    "eslint": "^7.17.0",
+    "github-release-from-changelog": "^2.1.1",
+    "prettier": "^2.2.1",
+    "release-it": "^13.6.6"
+  }
+}
