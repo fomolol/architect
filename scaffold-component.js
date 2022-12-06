@@ -11,16 +11,20 @@ const constants = require('./constants')
 const PACKAGE_PATH = constants.getPackagePath()
 const SOURCE_DIR = constants.dirs().src
 
-console.log('PACKAGE_PATH', PACKAGE_PATH)
-console.log('SOURCE_DIR', SOURCE_DIR)
-
 module.exports = (function () {
+  console.log('SOURCE_DIR', SOURCE_DIR)
+  console.log('PACKAGE_PATH', PACKAGE_PATH)
+
+  const FINAL_PATH = PACKAGE_PATH.replace('/node_modules', '')
+
+  console.log('FINAL_PATH', FINAL_PATH)
+
   const argv = minimist(process.argv.slice(2))
   return scaffoldComponent({
     name: argv.name,
     src: path.resolve(__dirname, 'scaffolding/stateless-component'),
     dest: path.resolve(
-      // PACKAGE_PATH,
+      FINAL_PATH || PACKAGE_PATH,
       SOURCE_DIR,
       argv.path ? argv.path : '',
       'components',
