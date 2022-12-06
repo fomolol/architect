@@ -31,6 +31,7 @@ module.exports = (function () {
     dest: path.resolve(
       FINAL_PATH,
       SOURCE_DIR,
+      argv.path ? argv.path : '',
       'pages',
       'api',
       createClassName(argv.name).toLowerCase()
