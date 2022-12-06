@@ -1,6 +1,6 @@
 {
   "name": "@fomolol/architect",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "The architect guides you in building React components that contain tests, stories and more.",
   "main": "index.js",
   "author": "fomolol",
