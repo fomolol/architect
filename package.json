@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "The architect guides you in building React components that contain tests, stories and more.",
   "main": "index.js",
+  "author": "fomolol",
   "scripts": {
     "build": "babel ./architect.js -o ./lib/index.js",
     "version": "auto-changelog -p && git add CHANGELOG.md",
@@ -27,7 +28,6 @@
     "templates",
     "nextjs"
   ],
-  "author": "Rob Sawyer (rob@fomolol.com)",
   "license": "MIT",
   "bin": {
     "architect": "architect.js"
