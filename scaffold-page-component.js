@@ -23,14 +23,15 @@ const createClassName = (name) => {
 module.exports = (function () {
   const argv = minimist(process.argv.slice(2))
   const destPath = argv.path || argv.name
-
+  const FINAL_PATH = PACKAGE_PATH.replace('/node_modules', '')
   return scaffoldComponent({
     name: argv.name,
     src: path.resolve(__dirname, 'scaffolding/page-component'),
     path: destPath,
     dest: path.resolve(
-      PACKAGE_PATH,
+      FINAL_PATH,
       SOURCE_DIR,
+      argv.path ? argv.path : '',
       'pages',
       createClassName(argv.name).toLowerCase()
     ),
