@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 overrides:
   ansi-regex: '>=5.0.1'
-  object-path: '>=0.11.5'
+  object-path: '>=0.11.8'
   handlebars: '>=4.7.7'
   parse-url: '>=6.0.1'
   node-fetch: '>=2.6.7'
@@ -1378,8 +1378,6 @@ packages:
       '@octokit/types': 5.5.0
       before-after-hook: 2.2.3
       universal-user-agent: 5.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/core/4.2.0:
@@ -1393,8 +1391,6 @@ packages:
       '@octokit/types': 9.0.0
       before-after-hook: 2.2.3
       universal-user-agent: 6.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/endpoint/6.0.12:
@@ -1420,8 +1416,6 @@ packages:
       '@octokit/request': 5.6.3
       '@octokit/types': 6.41.0
       universal-user-agent: 6.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/graphql/5.0.5:
@@ -1431,8 +1425,6 @@ packages:
       '@octokit/request': 6.2.3
       '@octokit/types': 9.0.0
       universal-user-agent: 6.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/openapi-types/12.11.0:
@@ -1524,10 +1516,8 @@ packages:
       '@octokit/request-error': 2.1.0
       '@octokit/types': 6.41.0
       is-plain-object: 5.0.0
-      node-fetch: 2.6.7
+      node-fetch: 3.3.0
       universal-user-agent: 6.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/request/6.2.3:
@@ -1538,10 +1528,8 @@ packages:
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.0.0
       is-plain-object: 5.0.0
-      node-fetch: 2.6.7
+      node-fetch: 3.3.0
       universal-user-agent: 6.0.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/rest/17.11.2:
@@ -1551,8 +1539,6 @@ packages:
       '@octokit/plugin-paginate-rest': 2.21.3_@octokit+core@2.5.4
       '@octokit/plugin-request-log': 1.0.4_@octokit+core@2.5.4
       '@octokit/plugin-rest-endpoint-methods': 3.17.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/rest/19.0.5:
@@ -1563,8 +1549,6 @@ packages:
       '@octokit/plugin-paginate-rest': 5.0.1_@octokit+core@4.2.0
       '@octokit/plugin-request-log': 1.0.4_@octokit+core@4.2.0
       '@octokit/plugin-rest-endpoint-methods': 6.8.1_@octokit+core@4.2.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@octokit/types/4.1.10:
@@ -2829,7 +2813,6 @@ packages:
       grizzly: 4.0.3
       minimist: 1.2.8
     transitivePeerDependencies:
-      - encoding
       - supports-color
     dev: true
 
@@ -2911,7 +2894,6 @@ packages:
       readjson: 2.2.2
       try-catch: 3.0.1
     transitivePeerDependencies:
-      - encoding
       - supports-color
     dev: true
 
@@ -4293,7 +4275,6 @@ packages:
       wildcard-match: 5.1.2
       yargs-parser: 21.1.1
     transitivePeerDependencies:
-      - encoding
       - supports-color
     dev: true
 
