@@ -44,12 +44,13 @@
     "@babel/core": "^7.7.5",
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
-    "chalk": "^3.0.0",
+    "chalk": "^5.2.0",
     "child_process": "^1.0.2",
     "colors": "^1.4.0",
     "commander": "^4.0.1",
     "dopl": "^0.2.0",
     "entities": "^2.0.0",
+    "handlebars": "^4.7.7",
     "minimist": "^1.2.8",
     "packpath": "^0.1.0",
     "path": "^0.12.7",
@@ -63,6 +64,12 @@
     "release-it": "^15.6.0"
   },
   "resolutions": {
-    "object-path": ">=0.11.5"
+    "ansi-regex": ">=5.0.1",
+    "object-path": ">=0.11.5",
+    "handlebars": ">=4.7.7",
+    "parse-url": ">=6.0.1",
+    "node-fetch": ">=2.6.7",
+    "parse-path": ">=5.0.0",
+    "minimist": ">=1.2.6"
   }
 }
