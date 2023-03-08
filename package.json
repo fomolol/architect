@@ -2,11 +2,11 @@
   "name": "@fomolol/architect",
   "version": "1.0.12",
   "description": "The architect guides you in building React components that contain tests, stories and more.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "author": "fomolol",
   "type": "module",
   "scripts": {
-    "build": "babel ./architect.js -o ./lib/index.js",
+    "build": "babel ./index.js -o ./lib/index.js",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "release": "f(){ release-it $1 && github-release-from-changelog ;};f",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -34,7 +34,7 @@
   ],
   "license": "MIT",
   "bin": {
-    "architect": "architect.js"
+    "architect": "lib/index.js"
   },
   "bugs": {
     "url": "https://github.com/fomolol/architect/issues"
