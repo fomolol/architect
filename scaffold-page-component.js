@@ -2,11 +2,11 @@
  * @file bin/scaffold-page-component.js
  * Handles scaffolding a page component.
  */
-const path = require('path')
-const minimist = require('minimist')
-const scaffoldComponent = require('./scaffolding/scaffold-component')
+import path from 'path'
+import minimist from 'minimist'
+import scaffoldComponent from './scaffolding/scaffold-component'
 
-const constants = require('./constants')
+import constants from './constants'
 
 const PACKAGE_PATH = constants.getPackagePath()
 const SOURCE_DIR = constants.dirs().src

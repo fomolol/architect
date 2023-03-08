@@ -2,7 +2,7 @@
   "name": "@fomolol/architect",
   "version": "1.0.10",
   "description": "The architect guides you in building React components that contain tests, stories and more.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "fomolol",
   "scripts": {
     "build": "babel ./architect.js -o ./lib/index.js",

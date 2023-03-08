@@ -2,16 +2,16 @@
  * @file bin/scaffold-stories.js
  * Handles scaffolding a Storybook story.
  */
-const path = require('path')
-const minimist = require('minimist')
-const scaffoldComponent = require('./scaffolding/scaffold-story-component')
+import path from 'path'
+import minimist from 'minimist'
+import scaffoldComponent from './scaffolding/scaffold-story-component'
 
-const constants = require('./constants')
+import constants from './constants'
 
 const PACKAGE_PATH = constants.getPackagePath()
 const SOURCE_DIR = constants.dirs().src
 
-module.exports = (function () {
+export default (function () {
   const argv = minimist(process.argv.slice(2))
   const destPath = argv.path || argv.name
   const FINAL_PATH = PACKAGE_PATH.replace('/node_modules', '')

@@ -2,16 +2,16 @@
  * @file bin/scaffold-app.js
  * Handles scaffolding an _app file.
  */
-const path = require('path')
-// const minimist = require('minimist');
-const scaffoldApp = require('./scaffolding/scaffold-app')
+import path from 'path'
+// import minimist from 'minimist')
+import scaffoldApp from './scaffolding/scaffold-app'
 
-const constants = require('./constants')
+import constants from './constants'
 
 const PACKAGE_PATH = constants.getPackagePath()
 const SOURCE_DIR = constants.dirs().src || PACKAGE_PATH
 
-module.exports = (function () {
+export default (function () {
   // const argv = minimist(process.argv.slice(2));
   const FINAL_PATH = PACKAGE_PATH.replace('/node_modules', '')
   return scaffoldApp({

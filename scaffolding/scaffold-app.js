@@ -3,18 +3,12 @@
   See the stateless-component folder for the template source files.
 */
 
-// const chalk = require('chalk');
-const dopl = require('dopl');
+const dopl = require('dopl')
 
-module.exports = ({
-  src,
-  dest
-}) => {
-
+export default ({ src, dest }) => {
   return dopl({
     output: dest,
     src: src,
-    data: {
-    }
-  });
+    data: {},
+  })
 }

@@ -5,13 +5,13 @@
  * Tool configuration.
  * @see https://www.npmjs.com/package/commander
  */
-const commander = require('commander')
-const path = require('path')
-const colors = require('colors')
-const { exec } = require('child_process')
+import commander from 'commander'
+import path from 'path'
+import colors from 'colors'
+import { exec } from 'child_process'
 
 // Local
-const constants = require('./constants')
+import constants from './constants'
 
 // Create the program
 const program = new commander.Command()

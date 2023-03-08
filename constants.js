@@ -2,10 +2,10 @@
  * @file constants.js
  * A collection of constants used throughout the scaffolds.
  */
-const pkgpath = require('packpath')
-const path = require('path')
+import pkgpath from 'packpath'
+import path from 'path'
 
-module.exports = {
+export default {
   /**
    * getPackagePath
    * @param {bool} self
