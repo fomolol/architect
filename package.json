@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "bin": {
-    "architect": "index.js"
+    "architect": "architect.js"
   },
   "bugs": {
     "url": "https://github.com/fomolol/architect/issues"
@@ -47,7 +47,7 @@
     "chalk": "^5.2.0",
     "child_process": "^1.0.2",
     "colors": "^1.4.0",
-    "commander": "^4.0.1",
+    "commander": "^10.0.0",
     "dopl": "^0.2.0",
     "entities": "^2.0.0",
     "handlebars": "^4.7.7",
